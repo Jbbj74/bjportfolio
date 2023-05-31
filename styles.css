@@ -349,60 +349,76 @@ img{
 /* end of services */
 
 /* Project section */
-#projects .container{
-    flex-direction: column;
-}
-#projects .projects-header{
-    border: 1px solid rgb(4, 51, 100);
 
-}
-#projects .container .photoshop-div{
-    padding-bottom: 100px;
-    flex-direction: column;
+ #projects .all-images {  
+        display: flex;  
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        column-gap: 40px;
+    }
 
-}
-#projects .photoshop-div{
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-}
-#projects .all-images{
-    display: flex;
-    width: 1200px;
-    column-gap: 50px;
+    #projects .photoshop-div {  
+        display: flex;  
+        flex-direction: row;
+        width: 900px;
+    }
+    #projects .section-title{
+        font-size: 5rem;
+    }
+    #projects .projects-header{
+        width: 100%;
+    }
+    #projects .project-img{
+        height: 800px;
+        width: 400px;
+        flex-basis: 45%;
+        overflow: hidden;
+    }
+    #projects .div1 img:hover{
+        transform: scale(1.5);
+        position: center;
+    }
+    #projects .projects-container{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    } #projects .all-images {  
+        display: flex;  
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        column-gap: 40px;
+    }
 
-}
-#projects .div1{
-    flex: 1;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: 8px 5px 14px rgb(19, 20, 21);
-
-
-}
-#projects .div1 img{
-    transition: .5s ease transform;
-    border-radius: 10px;
-}
-#projects .div1 img:hover{
-    transform: translateX(50%);
-    transform: scale(1.5);
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
- 
-}
-
-
-
-#projects .projects-header{
-    margin-top: 100px;
-}
-#projects .photoshop-div{
-    margin-top: 100px;
-}
-
+    #projects .photoshop-div {  
+        display: flex;  
+        flex-direction: row;
+        width: 900px;
+    }
+    #projects .section-title{
+        font-size: 5rem;
+    }
+    #projects .projects-header{
+        width: 100%;
+    }
+    #projects .project-img{
+        height: 800px;
+        width: 400px;
+        flex-basis: 45%;
+        overflow: hidden;
+    }
+    #projects .div1 img:hover{
+        transform: scale(1.5);
+        position: center;
+    }
+    #projects .projects-container{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
 
 /* End of Project section */
 
@@ -600,17 +616,43 @@ img{
     /* end of service section */
 
     /* project */
-    #projects .all-projects {    
+ #projects .all-images {  
+        display: flex;  
         flex-direction: row;
-        height: 100px;
+        height: 100%;
+        width: 100%;
+        column-gap: 40px;
+    }
+
+    #projects .photoshop-div {  
+        display: flex;  
+        flex-direction: row;
+        width: 900px;
+    }
+    #projects .section-title{
+        font-size: 5rem;
+    }
+    #projects .projects-header{
+        width: 100%;
     }
     #projects .project-img{
         height: 800px;
         width: 400px;
         flex-basis: 45%;
         overflow: hidden;
-        
     }
+    #projects .div1 img:hover{
+        transform: scale(1.5);
+        position: center;
+    }
+    #projects .projects-container{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+  
+
 
 
     /* end of project */
