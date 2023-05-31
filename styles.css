@@ -752,9 +752,7 @@ img{
     margin: 1.5%;
     }
     #projects .div1 img:hover{
-        object-fit: fill;
-        height: 100%;
-        border: 5pc solid crimson;
+        transform: scale(2);
     }
 
 }
