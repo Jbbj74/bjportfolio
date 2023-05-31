@@ -47,7 +47,7 @@ img{
     padding:10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid  rgb(17, 109, 221);
+    border: 2.6px solid  rgb(17, 109, 221);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
@@ -146,8 +146,8 @@ img{
     color: crimson;
 }
 #header .hamburger {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     display: inline-block;
     border: 3px solid white;
     border-radius: 50%;
@@ -158,7 +158,7 @@ img{
     z-index: 100;
     cursor: pointer;
     transform: scale(.7);
-    margin-right: 20px;
+    margin-right: 10px;
 }
 #header .hamburger:after {
     position: absolute;
@@ -172,7 +172,7 @@ img{
 }
 #header .hamburger .bar {
     height: 2px;
-    width: 30px;
+    width: 17px;
     position: relative;
     background-color: rgb(255, 255, 255);
     z-index: -1;
@@ -213,7 +213,7 @@ img{
 }
 #hero .hero{
     max-width: 1200px;
-    margin: auto;
+    margin-left : 70px;
     padding: 1 50px;
     justify-content: flex-start;
 }
@@ -241,7 +241,7 @@ img{
 #hero h1{
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 3rem;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -280,14 +280,14 @@ img{
     padding: 100px 0;
 }
 #services .service-top{
-    width: 500px;
+    width: 400px;
     max-width: 0 auto;
 
 }
 
 #services .service-top p {
     color: black;
-    font-size: 1.4rem;
+    font-size: 1/4rem;
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 300;
@@ -301,7 +301,7 @@ img{
     margin-top: 50px;
 }
 #services .service-item{
-    flex-basis: 80%;
+    flex-basis: 90%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -349,76 +349,75 @@ img{
 /* end of services */
 
 /* Project section */
+#projects .container{
+    flex-direction: column;
+}
+#projects .projects-header{
+    border: 1px solid rgb(4, 51, 100);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#projects .photoshop-div{
+    justify-content: center;
+    align-items: center;
+}
+#projects .container .photoshop-div{
+    padding-bottom: 100px;
+    flex-direction: column;
 
- #projects .all-images {  
-        display: flex;  
-        flex-direction: row;
-        height: 100%;
-        width: 100%;
-        column-gap: 40px;
-    }
+}
 
-    #projects .photoshop-div {  
-        display: flex;  
-        flex-direction: row;
-        width: 900px;
-    }
-    #projects .section-title{
-        font-size: 5rem;
-    }
-    #projects .projects-header{
-        width: 100%;
-    }
-    #projects .project-img{
-        height: 800px;
-        width: 400px;
-        flex-basis: 45%;
-        overflow: hidden;
-    }
-    #projects .div1 img:hover{
-        transform: scale(1.5);
-        position: center;
-    }
-    #projects .projects-container{
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-    } #projects .all-images {  
-        display: flex;  
-        flex-direction: row;
-        height: 100%;
-        width: 100%;
-        column-gap: 40px;
-    }
+#projects  h1{
+   font-size: 30px;
+}
+#projects .section-title{
+    margin: 10px;
+    
+ }
+#projects .photoshop-div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
 
-    #projects .photoshop-div {  
-        display: flex;  
-        flex-direction: row;
-        width: 900px;
-    }
-    #projects .section-title{
-        font-size: 5rem;
-    }
-    #projects .projects-header{
-        width: 100%;
-    }
-    #projects .project-img{
-        height: 800px;
-        width: 400px;
-        flex-basis: 45%;
-        overflow: hidden;
-    }
-    #projects .div1 img:hover{
-        transform: scale(1.5);
-        position: center;
-    }
-    #projects .projects-container{
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-    }
+}
+#projects .all-images{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    row-gap: 50px;
+
+}
+#projects .div1{
+    flex: 1;
+    height: 260px;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+
+}
+#projects .div1 img{
+    transition: .5s ease transform;
+    border-radius: 20px;
+    height: 100%;
+    box-shadow: 10px 5px 10px rgb(20, 22, 24);
+
+}
+#projects .div1 img:hover{
+    transform: scale(120%);
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+
+ 
+}
+
+
+
+
+
 
 /* End of Project section */
 
@@ -594,7 +593,7 @@ img{
 /* end of ketfranes */
 
 /* media query for tablet */
-@media only screen and (min-width:800px){
+@media only screen and (min-width:600px){
     .cta{
         font-size: 2.5rem;
         padding: 20px 60px;
@@ -613,10 +612,16 @@ img{
         flex-basis: 45%;
         margin: 2.5%;
     }
+    #services  .service-top {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
     /* end of service section */
 
     /* project */
- #projects .all-images {  
+ 
+    #projects .all-images {  
         display: flex;  
         flex-direction: row;
         height: 100%;
@@ -652,7 +657,6 @@ img{
         margin: 0;
     }
   
-
 
 
     /* end of project */
@@ -721,7 +725,7 @@ img{
 
 /* Media Query for Desktop */
 
-@media only screen and (min-width: 1200px){
+@media only screen and (max-width: 1200px){
     
     #header .hamburger{
         display: none;
@@ -746,15 +750,13 @@ img{
     #services .service-bottom .service-item{
     flex-basis: 22%;
     margin: 1.5%;
-}
-    #projects .project-item .project-img img{
-        width: 600px; 
-
     }
-    #projects .project-item .project-img{
-
-        
+    #projects .div1 img:hover{
+        object-fit: fill;
+        height: 100%;
+        border: 5pc solid crimson;
     }
+
 }
 
 
