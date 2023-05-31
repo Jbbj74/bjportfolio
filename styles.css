@@ -593,7 +593,7 @@ img{
 /* end of ketfranes */
 
 /* media query for tablet */
-@media only screen and (min-width:600px){
+@media only screen and (min-width:800px){
     .cta{
         font-size: 2.5rem;
         padding: 20px 60px;
@@ -725,7 +725,7 @@ img{
 
 /* Media Query for Desktop */
 
-@media only screen and (max-width: 1200px){
+@media only screen and (min-width: 1200px){
     
     #header .hamburger{
         display: none;
